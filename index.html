@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antik Zvole | Výkup starožitností, knih a vyklízení pozůstalostí na Moravě</title>
+    <meta name="description"
+        content="Výkup starožitností, retro předmětů, nábytku a starých knih na Moravě. Provádíme kompletní a rychlé vyklízení pozůstalostí ve Zvoli a okolí – Brno, Olomouc, Zlín, Prostějov. Platba v hotovosti.">
+    <link rel="canonical" href="https://www.antikzvole.cz/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+
+    <!-- Open Graph / Facebook SEO -->
+    <meta property="og:title" content="Antik Zvole | Výkup starožitností, knih a vyklízení pozůstalostí na Moravě">
+    <meta property="og:description"
+        content="Výkup starožitností, retro předmětů, nábytku a starých knih na Moravě. Provádíme kompletní a rychlé vyklízení pozůstalostí ve Zvoli a okolí – Brno, Olomouc, Zlín, Prostějov. Platba v hotovosti.">
+    <meta property="og:image" content="https://www.antikzvole.cz/assets/hero_antique.png">
+    <meta property="og:url" content="https://www.antikzvole.cz/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter SEO -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Antik Zvole | Výkup starožitností, knih a vyklízení pozůstalostí na Moravě">
+    <meta name="twitter:description"
+        content="Výkup starožitností, retro předmětů, nábytku a starých knih na Moravě. Provádíme kompletní a rychlé vyklízení pozůstalostí ve Zvoli a okolí – Brno, Olomouc, Zlín, Prostějov. Platba v hotovosti.">
+    <meta name="twitter:image" content="https://www.antikzvole.cz/assets/hero_antique.png">
+
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide/dist/umd/lucide.min.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- JSON-LD LocalBusiness Schema for Google SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Antik Zvole",
+      "image": "https://www.antikzvole.cz/assets/hero_antique.png",
+      "description": "Výkup starožitností, retro nábytku, knih a profesionální vyklízení pozůstalostí ve Zvoli a na celé Moravě – Brno, Olomouc, Zlín, Prostějov.",
+      "telephone": "+420 603 540 576",
+      "email": "Antikzvole@seznam.cz",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Zvole 39",
+        "addressLocality": "Zvole",
+        "postalCode": "789 01",
+        "addressCountry": "CZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "49.4696",
+        "longitude": "17.1169"
+      },
+      "url": "https://www.antikzvole.cz/",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59",
+        "description": "Provozní doba dle telefonické domluvy (volejte kdykoliv)"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Background Floating Circles -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-dot"></span>
+                ANTIK ZVOLE
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#domu" class="nav-link active">Domů</a></li>
+                <li><a href="#sluzby" class="nav-link">Služby</a></li>
+                <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                <li><a href="#jak-to-funguje" class="nav-link">Jak to funguje</a></li>
+                <li><a href="#o-nas" class="nav-link">O nás</a></li>
+                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="tel:+420603540576" class="btn btn-nav">
+                    <i data-lucide="phone" class="icon-sm"></i>
+                    <span>603 540 576</span>
+                </a>
+            </div>
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="menu-toggle" aria-label="Otevřít menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="#domu" class="mobile-link">Domů</a></li>
+            <li><a href="#sluzby" class="mobile-link">Služby</a></li>
+            <li><a href="#galerie" class="mobile-link">Galerie</a></li>
+            <li><a href="#jak-to-funguje" class="mobile-link">Jak to funguje</a></li>
+            <li><a href="#o-nas" class="mobile-link">O nás</a></li>
+            <li><a href="#kontakt" class="mobile-link">Kontakt</a></li>
+            <li>
+                <a href="tel:+420603540576" class="btn btn-primary btn-mobile-call">
+                    <i data-lucide="phone"></i>
+                    <span>603 540 576</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="domu" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content reveal">
+                    <div class="badge-pill">
+                        <span class="badge-dot"></span>
+                        Výkup & Vyklízení pozůstalostí
+                    </div>
+
+                    <h1 class="hero-title">
+                        Příběhy minulosti <br>
+                        <span class="text-outline">v moderním</span> pojetí.
+                    </h1>
+
+                    <p class="hero-description">
+                        Vykupujeme starožitnosti, umění, retro nábytek z 60.–80. let a knihy po celé Moravě. Provádíme
+                        šetrné a
+                        profesionální vyklízení pozůstalostí. Nabízíme férové ocenění a okamžitou platbu v hotovosti.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#kontakt" class="btn btn-primary">Nezávazná poptávka</a>
+                        <a href="#sluzby" class="btn btn-secondary">Naše služby</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal delay-1">
+                    <div class="hero-img-wrapper">
+                        <img src="assets/hero_antique.png" alt="Starožitnosti Antik Zvole" class="hero-image">
+                        <!-- Decorative Circular Ring -->
+                        <div class="circle-decoration"></div>
+                        <!-- Rotating Circular Badge -->
+                        <div class="rotating-badge">
+                            <svg viewBox="0 0 100 100" width="120" height="120">
+                                <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                                    fill="none" />
+                                <text class="rotating-badge-text">
+                                    <textPath href="#circlePath">
+                                        ANTIK ZVOLE • VÝKUP • RETRO • KNIHY •
+                                    </textPath>
+                                </text>
+                            </svg>
+                            <div class="rotating-badge-center">
+                                <i data-lucide="sparkles"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Features Bar -->
+            <div class="features-bar reveal delay-2">
+                <div class="feature-item">
+                    <div class="feature-icon"><i data-lucide="circle-dollar-sign"></i></div>
+                    <div>
+                        <h3>Platba ihned</h3>
+                        <p>Peníze vyplácíme v hotovosti při převzetí.</p>
+                    </div>
+                </div>
+                <div class="feature-divider"></div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i data-lucide="truck"></i></div>
+                    <div>
+                        <h3>Vlastní odvoz</h3>
+                        <p>Zajistíme naložení i dopravu na naše náklady.</p>
+                    </div>
+                </div>
+                <div class="feature-divider"></div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+                    <div>
+                        <h3>Seriózní jednání</h3>
+                        <p>Profesionální odhad a úcta k historii.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="sluzby" class="section-padding">
+            <div class="section-header reveal">
+                <span class="section-tag">Co děláme</span>
+                <h2 class="section-title">Naše služby</h2>
+                <p class="section-subtitle">Dáváme starým předmětům novou šanci a pomáháme vám uvolnit prostor s
+                    lehkostí.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="gem"></i>
+                    </div>
+                    <h3 class="service-card-title">Výkup starožitností</h3>
+                    <p class="service-card-text">
+                        Máte doma staré hodiny, porcelán, sklo, obrazy, hračky nebo šperky? Vykupujeme jednotlivé
+                        předměty i celé sbírky. Posoudíme uměleckou hodnotu a nabídneme adekvátní cenu.
+                    </p>
+                    <ul class="service-list">
+                        <li><i data-lucide="check-circle" class="icon-accent"></i> Obrazy, grafiky, rámy</li>
+                        <li><i data-lucide="check-circle" class="icon-accent"></i> Hodiny, hodinky, stříbro</li>
+                        <li><i data-lucide="check-circle" class="icon-accent"></i> Porcelán, sklo, keramika</li>
+                    </ul>
+                    <a href="#kontakt" class="service-link">
+                        <span>Chci prodat</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card reveal delay-1">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="radio"></i>
+                    </div>
+                    <h3 class="service-card-title">Retro & Vintage nábytek</h3>
+                    <p class="service-card-text">
+                        Nábytek a designové doplňky z 60., 70. a 80. let (Brusel styl, návrháři jako Halabala, Jiroutek,
+                        Šuman apod.) zažívají obrovský návrat. Vykoupíme vaše křesla, komody, svítidla či drobnosti.
+                    </p>
+                    <ul class="service-list">
+                        <li><i data-lucide="check-circle" class="icon-accent"></i> Křesílka a židle (i k renovaci)</li>
+                        <li><i data-lucide="check-circle" class="icon-accent"></i> Komody, stolky, knihovny</li>
+                        <li><i data-lucide="check-circle" class="icon-accent"></i> Retro lampy, lustry, dekorace</li>
+                    </ul>
+                    <a href="#kontakt" class="service-link">
+                        <span>Chci prodat</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card reveal delay-2">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h3 class="service-card-title">Staré knihy & knihovny</h3>
+                    <p class="service-card-text">
+                        Knihy jsou nositelé vědění. Vykupujeme staré dobrodružné knihy, historické tisky, odbornou
+                        literaturu, bibliofilie, ale i komiksy či staré pohlednice. Možnost převzetí celých knihoven.
+                    </p>
+                    <ul class="service-list">
+                        <li><i data-lucide="check-circle" class="icon-accent"></i> Knihy vydané před rokem 1950</li>
+                        <li><i data-lucide="check-circle" class="icon-accent"></i> Komiksy, staré mapy, plakáty</li>
+                        <li><i data-lucide="check-circle" class="icon-accent"></i> Celé pozůstalé knihovny</li>
+                    </ul>
+                    <a href="#kontakt" class="service-link">
+                        <span>Chci prodat</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card reveal delay-3">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="home"></i>
+                    </div>
+                    <h3 class="service-card-title">Vyklízení pozůstalostí</h3>
+                    <p class="service-card-text">
+                        Stojíte před úkolem vyklidit dům či byt po příbuzných? Provedeme kompletní vyklizení od půdy po
+                        sklep. Vše vytřídíme, cenné věci od vás odkoupíme a odečteme z ceny vyklízení.
+                    </p>
+                    <ul class="service-list">
+                        <li><i data-lucide="check-circle" class="icon-accent"></i> Vyklizení domů, bytů, chat</li>
+                        <li><i data-lucide="check-circle" class="icon-accent"></i> Ekologická likvidace odpadu</li>
+                        <li><i data-lucide="check-circle" class="icon-accent"></i> Odkup cenných věcí z objektu</li>
+                    </ul>
+                    <a href="#kontakt" class="service-link">
+                        <span>Poptat vyklizení</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Gallery Section -->
+        <section id="galerie" class="section-padding bg-dark-secondary">
+            <div class="section-header reveal">
+                <span class="section-tag">Co vykupujeme</span>
+                <h2 class="section-title">Ukázka předmětů</h2>
+                <p class="section-subtitle">Prohlédněte si typické ukázky starožitností, retro kousků a knih, o které
+                    máme zájem.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="gallery-filters reveal">
+                <button class="filter-btn active" data-filter="all">Všechny předměty</button>
+                <button class="filter-btn" data-filter="antique">Starožitnosti</button>
+                <button class="filter-btn" data-filter="retro">Retro & Design</button>
+                <button class="filter-btn" data-filter="books">Knihy & Tiskoviny</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid reveal">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-category="retro">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/antique_furniture.png" alt="Retro křeslo a skříň" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-item-category">Retro & Design</span>
+                            <h4 class="gallery-item-title">Designový nábytek</h4>
+                            <p class="gallery-item-desc">Renovovaná křesílka z 60. let, design J. Šuman a dýhované
+                                skříňky.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-category="retro">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/retro_items.png" alt="Retro rádio a fotoaparát" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-item-category">Retro & Design</span>
+                            <h4 class="gallery-item-title">Elektronika a Optika</h4>
+                            <p class="gallery-item-desc">Tranzistorová rádia, retro kamery, staré gramodesky a
+                                magnetofony.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-category="books">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/old_books.png" alt="Staré kožené knihy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-item-category">Knihy & Tiskoviny</span>
+                            <h4 class="gallery-item-title">Historické tisky</h4>
+                            <p class="gallery-item-desc">Celokožené vazby, staré atlasy, kroniky a bibliofilské edice.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-category="antique">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/hero_antique.png" alt="Psací stroj a kapesní hodinky" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-item-category">Starožitnosti</span>
+                            <h4 class="gallery-item-title">Drobné starožitnosti</h4>
+                            <p class="gallery-item-desc">Kovové psací stroje, funkční kapesní hodinky, kompasy a lupy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Callout -->
+            <div class="gallery-footer reveal">
+                <p>Máte podobný předmět? Stačí jej vyfotit a zaslat nám fotku k posouzení.</p>
+                <a href="#kontakt" class="btn btn-primary">Poslat fotografii</a>
+            </div>
+        </section>
+
+        <!-- Process Timeline Section -->
+        <section id="jak-to-funguje" class="section-padding">
+            <div class="section-header reveal">
+                <span class="section-tag">Jednoduše a rychle</span>
+                <h2 class="section-title">Jak probíhá výkup?</h2>
+                <p class="section-subtitle">Celý proces jsme zjednodušili na 3 snadné kroky, které šetří váš čas.</p>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- Step 1 -->
+                <div class="timeline-step reveal">
+                    <div class="step-number-container">
+                        <div class="step-number">1</div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">První kontakt</h3>
+                        <p class="step-desc">
+                            Vyplňte náš formulář níže, přiložte fotografie předmětů nebo nám zavolejte. Domluvíme si
+                            předběžné podrobnosti a případně termín návštěvy.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-step reveal delay-1">
+                    <div class="step-number-container">
+                        <div class="step-number">2</div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Ocenění předmětů</h3>
+                        <p class="step-desc">
+                            Na základě fotek nebo osobní návštěvy u vás doma (na Moravě – Brno, Olomouc, Zlín, Prostějov
+                            a okolí) předměty odborně posoudíme
+                            a navrhneme vám nejlepší možnou cenu.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-step reveal delay-2">
+                    <div class="step-number-container">
+                        <div class="step-number">3</div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Platba a odvoz</h3>
+                        <p class="step-desc">
+                            Pokud s cenou souhlasíte, ihned vám vyplatíme hotovost. Předměty bezpečně zabalíme a
+                            odvezeme vlastní dopravou. Nemusíte se o nic starat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="o-nas" class="section-padding bg-dark-secondary">
+            <div class="about-container">
+                <div class="about-visual reveal">
+                    <div class="about-img-wrapper">
+                        <img src="assets/cleanout_service.png" alt="Vyklizené prostory Antik Zvole" class="about-image">
+                        <!-- Floating graphic -->
+                        <div class="floating-circle-stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Let zkušeností</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content reveal delay-1">
+                    <span class="section-tag">O nás</span>
+                    <h2 class="section-title">Spojení historie a moderního přístupu</h2>
+                    <p class="about-text">
+                        Jsme rodinná firma sídlící v obci <strong>Zvole na Moravě</strong>. Působíme po celém moravském
+                        regionu – od Brna přes Olomouc, Zlín, Prostějov až po Kroměříž a Uherské Hradiště.
+                        Specializujeme se na vyhledávání, výkup a záchranu
+                        starých předmětů, které v sobě nesou jedinečnou historii. Propojujeme úctu k řemeslné práci
+                        našich předků s moderními standardy rychlosti, férovosti a spolehlivosti.
+                    </p>
+                    <p class="about-text">
+                        Kromě samotného výkupu si uvědomujeme, jak psychicky i fyzicky náročné může být vyklízení
+                        nemovitostí. Proto k vyklízení pozůstalostí přistupujeme maximálně citlivě a zodpovědně. Co má
+                        hodnotu, rádi zachráníme a odkoupíme, zbytek ekologicky zlikvidujeme.
+                    </p>
+
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <h4>100%</h4>
+                            <p>Spolehlivost</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>1000+</h4>
+                            <p>Spokojených klientů</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Rychlost</h4>
+                            <p>Do 24 hodin u vás</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="kontakt" class="section-padding">
+            <div class="section-header reveal">
+                <span class="section-tag">Ozvěte se nám</span>
+                <h2 class="section-title">Nezávazná kalkulace</h2>
+                <p class="section-subtitle">Máte dotaz nebo chcete nabídnout věci k prodeji? Napište nám nebo rovnou
+                    zavolejte.</p>
+            </div>
+
+            <!-- Contact form -->
+            <div class="contact-form-container reveal delay-1">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Jméno a příjmení *</label>
+                            <input type="text" id="name" name="name" required placeholder="Jan Novák">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+420 603 540 576">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="jan.novak@email.cz">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Mám zájem o:</label>
+                        <select id="service" name="service">
+                            <option value="vykup-antik">Výkup starožitností</option>
+                            <option value="vykup-retro">Výkup retro nábytku</option>
+                            <option value="vykup-knihy">Výkup knih</option>
+                            <option value="vyklizeni">Vyklízení pozůstalostí</option>
+                            <option value="jine">Jiné / Dotaz</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Popis předmětů / Zpráva *</label>
+                        <textarea id="message" name="message" required rows="5"
+                            placeholder="Popište předměty, které nabízíte (množství, stav, stáří)..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Připojit fotografie předmětů (nepovinné)</label>
+                        <div class="file-upload-zone">
+                            <input type="file" id="photos" name="photos" multiple accept="image/*">
+                            <i data-lucide="upload-cloud"></i>
+                            <p>Přetáhněte sem fotky nebo <span>klikněte a vyberte</span></p>
+                            <span class="file-info-text">Podporovány jsou soubory JPEG, PNG. Max. 10MB
+                                celkem.</span>
+                        </div>
+                        <div id="fileList" class="file-list"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Odeslat nezávaznou poptávku</span>
+                        <i data-lucide="send"></i>
+                    </button>
+                </form>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="contact-container">
+                    <!-- Contact info -->
+                    <div class="contact-info reveal">
+                        <h3 class="contact-info-title">Antik Zvole</h3>
+                        <p class="contact-info-desc">Férový partner pro výkup starožitností a vyklízení pozůstalostí ve
+                            Zvoli a na celé Moravě – Brno, Olomouc, Zlín, Prostějov, Kroměříž.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon"><i data-lucide="phone"></i></div>
+                                <div>
+                                    <span>Telefon</span>
+                                    <a href="tel:+420603540576">603 540 576</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <span>E-mail</span>
+                                    <a href="mailto:Antikzvole@seznam.cz">Antikzvole@seznam.cz</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <span>Kde nás najdete</span>
+                                    <p>Zvole 39, 789 01</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon"><i data-lucide="calendar"></i></div>
+                                <div>
+                                    <span>Provozní doba</span>
+                                    <p>Dle telefonické dohody (volejte kdykoliv)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Custom Visual Map -->
+                        <div class="custom-map">
+                            <div class="map-circle-glow"></div>
+                            <div class="map-inner">
+                                <i data-lucide="map" class="map-bg-icon"></i>
+                                <div class="map-pin-indicator">
+                                    <span class="pin-pulse"></span>
+                                    <i data-lucide="map-pin" class="pin-icon"></i>
+                                </div>
+                                <span class="map-label">Působíme po celé Moravě – Brno, Olomouc, Zlín, Prostějov</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Success popup (hidden initially) -->
+                    <div id="formSuccess" class="form-success-overlay">
+                        <div class="form-success-card">
+                            <div class="success-icon"><i data-lucide="check"></i></div>
+                            <h3>Zpráva úspěšně odeslána</h3>
+                            <p>Děkujeme za váš zájem. Vaši poptávku zpracujeme co nejdříve a ozveme se vám zpět.</p>
+                            <button id="closeSuccessBtn" class="btn btn-primary">Zavřít</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-dot"></span>
+                    ANTIK ZVOLE
+                </a>
+                <ul class="footer-links">
+                    <li><a href="#domu">Domů</a></li>
+                    <li><a href="#sluzby">Služby</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#jak-to-funguje">Jak to funguje</a></li>
+                    <li><a href="#o-nas">O nás</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Antik Zvole. Všechna práva vyhrazena.</p>
+                <p class="dev-credits">Vytvořeno s úctou k minulosti</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>

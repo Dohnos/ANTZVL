@@ -1,0 +1,97 @@
+<!-- 
+  EmailJS Template Configuration for Antik Zvole
+  
+  NÁVOD K POUŽITÍ:
+  1. V EmailJS běžte do sekce "Email Templates" -> vytvořte novou šablonu.
+  2. Klikněte na tlačítko "Source" (Zdrojový kód) v editoru těla e-mailu.
+  3. Zkopírujte celý kód níže (sekce HTML TĚLO E-MAILU) a vložte jej tam.
+  4. Jako PŘEDMĚT (Subject) vložte:
+     [Antik Zvole] Nová poptávka: {{name}} - {{service}}
+-->
+
+<!-- ==========================================
+     HTML TĚLO E-MAILU (Vložit do editoru přes "Source")
+     ========================================== -->
+<div style="background-color: #f4f4f7; padding: 40px 20px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #111111;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); border: 1px solid #e8e8ed;">
+    <!-- Hlavička -->
+    <tr>
+      <td bgcolor="#111111" style="padding: 40px; text-align: center;">
+        <h1 style="color: #ffffff; margin: 0; font-size: 24px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">Antik Zvole</h1>
+        <p style="color: #a0a0a5; margin: 5px 0 0 0; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Nová poptávka z webových stránek</p>
+      </td>
+    </tr>
+    <!-- Obsah -->
+    <tr>
+      <td style="padding: 40px;">
+        <p style="font-size: 16px; line-height: 1.5; margin-top: 0; margin-bottom: 25px;">Dobrý den,</p>
+        <p style="font-size: 16px; line-height: 1.5; margin-bottom: 25px;">z vašeho webového formuláře byla odeslána nová nezávazná poptávka. Níže naleznete podrobné detaily:</p>
+        
+        <!-- Tabulka detailů -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 30px; border-collapse: collapse;">
+          <tr style="border-bottom: 1px solid #e8e8ed;">
+            <td width="35%" style="padding: 12px 0; font-size: 14px; font-weight: bold; color: #55555a;">Jméno odesílatele:</td>
+            <td width="65%" style="padding: 12px 0; font-size: 15px; color: #111111;">{{name}}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e8e8ed;">
+            <td style="padding: 12px 0; font-size: 14px; font-weight: bold; color: #55555a;">Telefonní číslo:</td>
+            <td style="padding: 12px 0; font-size: 15px; color: #111111; font-weight: 600;"><a href="tel:{{phone}}" style="color: #111111; text-decoration: none;">{{phone}}</a></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e8e8ed;">
+            <td style="padding: 12px 0; font-size: 14px; font-weight: bold; color: #55555a;">E-mailová adresa:</td>
+            <td style="padding: 12px 0; font-size: 15px; color: #111111;">{{email}}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e8e8ed;">
+            <td style="padding: 12px 0; font-size: 14px; font-weight: bold; color: #55555a;">Typ poptávky:</td>
+            <td style="padding: 12px 0; font-size: 14px; color: #111111; font-weight: bold; text-transform: uppercase;">{{service}}</td>
+          </tr>
+        </table>
+
+        <!-- Zpráva -->
+        <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border: 1px solid #e8e8ed; margin-bottom: 30px;">
+          <h3 style="margin-top: 0; margin-bottom: 10px; font-size: 14px; color: #55555a; text-transform: uppercase; letter-spacing: 0.5px;">Zpráva / Popis předmětů:</h3>
+          <p style="margin: 0; font-size: 14.5px; line-height: 1.6; white-space: pre-wrap; color: #111111;">{{message}}</p>
+        </div>
+
+        <!-- Fotografie -->
+        <div>
+          <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 14px; color: #55555a; text-transform: uppercase; letter-spacing: 0.5px;">Přiložené fotografie z Cloudinary:</h3>
+          <p style="font-size: 14px; line-height: 1.6; color: #111111;">
+            {{image_urls}}
+          </p>
+        </div>
+      </td>
+    </tr>
+    <!-- Patička -->
+    <tr>
+      <td bgcolor="#f8f9fa" style="padding: 24px; text-align: center; border-top: 1px solid #e8e8ed;">
+        <p style="margin: 0; font-size: 12px; color: #88888e;">Tento e-mail byl automaticky vygenerován formulářem na webu Antik Zvole.</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<!-- ==========================================
+     TEXTOVÁ VERZE (Pokud preferujete čistý text)
+     ========================================== -->
+<!-- 
+Dobrý den,
+
+z vašeho webového formuláře byla odeslána nová poptávka.
+
+--- DETAILY POPTÁVKY ---
+Jméno: {{name}}
+Telefon: {{phone}}
+E-mail: {{email}}
+Mám zájem o: {{service}}
+
+--- POPIS PŘEDMĚTŮ / ZPRÁVA ---
+{{message}}
+
+--- ODKAZY NA FOTOGRAFIE ---
+{{image_urls}}
+
+--------------------------------------------
+Tento e-mail byl odeslán z webu Antik Zvole.
+-->
